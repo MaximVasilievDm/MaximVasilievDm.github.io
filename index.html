@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang = "ru">
 <head>
+<?php
+$fio = $_POST['fio'];
+$email = $_POST['email'];
+$words = $_POST['words'];
+$fio = htmlspecialchars($fio);
+$email = htmlspecialchars($email);
+$words = htmlspecialchars($words);
+$fio = urldecode($fio);
+$email = urldecode($email);
+$words = urldecode($words);
+$fio = trim($fio);
+$email = trim($email);
+$words = trim($words);
+?>
+<?php
+
 <meta name = "description" content = "MaxCode, MaxCode Games, Games, Игры">
 <meta name="author" content = "Максим Васильев">
 <meta charset = "UTF - 8">
