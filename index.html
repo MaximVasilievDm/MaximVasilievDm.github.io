@@ -1,31 +1,6 @@
 <!DOCTYPE html>
 <html lang = "ru">
 <head>
-<?php
-$fio = $_POST['fio'];
-$email = $_POST['email'];
-$words = $_POST['words'];
-$fio = htmlspecialchars($fio);
-$email = htmlspecialchars($email);
-$words = htmlspecialchars($words);
-$fio = urldecode($fio);
-$email = urldecode($email);
-$words = urldecode($words);
-$fio = trim($fio);
-$email = trim($email);
-$words = trim($words);
-?>
-<?php
-mail("example@mail.ru", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email , . " Сообщение: ".$words. , From: vasilievmaxim313@gmail.com\r\n");
-if (mail("example@mail.ru", "Заказ с сайта", "ФИО:".$fio.". E-mail: ".$email , " Сообщение:" .$words. , From: vasilievmaxim313@gmail.com \r\n")) 
-{    
-echo "Сообщение успешно отправлено";
-} 
-else 
-{   
- echo "При отправке сообщения возникли ошибки";
-}
-?>
 <meta name = "description" content = "MaxCode, MaxCode Games, Games, Игры">
 <meta name="author" content = "Максим Васильев">
 <meta charset = "UTF - 8">
@@ -33,9 +8,12 @@ else 
 <body>
 <img src = "20220730_112318.png" height = "800" width = "600" alt = "MaxCode Games">
 <h1>Добро пожаловать на сайт MaxCode Games</h1>
-<h2>Наши проекты:</h2>
-<h2>SCP: Safe Place</h2>
-<h5>Проект в разработке</h5>
+<nav> 
+<a href="index.html">Главная</a> | 
+<a href="compsoftware.html">Программное обеспечение</a> | 
+<a href="games.html">Игры</a> | 
+<a href="invitetoteam.html">Вступить в команду</a> 
+</nav>
 <h2>Полезные ссылки:</h2>
 <a href="https://discord.gg/dMxR3JMPZ2">Discord</a>
 <br>
